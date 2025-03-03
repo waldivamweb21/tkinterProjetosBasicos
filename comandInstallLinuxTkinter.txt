@@ -1,0 +1,35 @@
+Linux (Ubuntu/Debian)
+
+Instalar o tkinter com o seguinte comando no terminal:
+
+sudo apt update
+sudo apt install python3-tk -y
+
+Teste se o tkinter está funcionando
+
+No terminal ou prompt de comando e execute:
+
+python3 -m tkinter
+
+
+Se der O erro ImportError: cannot import name 'ImageTk' 
+from 'PIL' geralmente ocorre porque o módulo pillow (PIL) 
+está instalado de forma incorreta ou está desatualizado. 
+
+Digite o comando no terminal linux:
+
+pip3 install --upgrade pillow
+
+Para usuários de Linux (caso pip não funcione)
+
+sudo apt update
+sudo apt install python3-pil python3-pil.imagetk -y
+
+Verifique se o ImageTk pode ser importado
+
+Após a instalação, teste se o ImageTk pode ser importado 
+corretamente.
+
+ Execute este comando no terminal:
+
+python3 -c "from PIL import Image, ImageTk; print('PIL funcionando!')"
